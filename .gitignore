@@ -39,6 +39,9 @@ default.php
 # htaccess
 /.htaccess
 
+# remove support folder
+/wp-content/themes/revokedigital/support-files
+
 # All plugins
 # Note: If you wish to whitelist plugins,
 # uncomment the next line
