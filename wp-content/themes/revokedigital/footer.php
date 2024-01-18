@@ -28,7 +28,7 @@
 							<!-- logo - start -->
 							<div class="mb-4 lg:-mt-2">
 								<a href="/" class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl" aria-label="logo">
-									<img src="<?php bloginfo('template_directory'); ?>/images/logo-second.svg" alt="" class="w-full">
+									<img src="<?php bloginfo('template_directory'); ?>/images/logo-second-white.svg" alt="" class="w-full">
 								</a>
 							</div>
 							<!-- logo - end -->

@@ -3,20 +3,20 @@ get_header();
 ?>
 <!-- Hero Section -->
 <section>
-    <div class="relative flex flex-col items-center bg-heroBg pt-5 pb-10 overflow-hidden after:content-[''] after:absolute after:top-0 after:bottom-0 after:right-0 after:left-0 after:bg-mobileViewBannerBg after:w-full after:h-full h-full">
-        <div>
+    <div class="heroSec relative flex flex-col items-center pt-5 pb-10 overflow-hidden bg-black after:content-[''] after:absolute after:top-0 after:bottom-0 after:right-0 after:left-0 after:bg-mobileViewBannerBg after:w-full after:h-full after:hidden h-full" id="heroSec">
+        <div class="relative z-[3]">
             <div class="container">
                 <div class="relative z-[2]">
 
                     <div class="flex flex-col items-center pb-0 pt-8 text-center w-full sm:pb-16 lg:pb-32 lg:pt-32">
-                        <p class="mb-4 font-semibold text-indigo-500 md:mb-6 md:text-lg xl:text-xl">Revoke Digital
+                        <p class="mb-4 font-semibold text-white md:mb-6 md:text-lg xl:text-xl">Revoke Digital
                         </p>
 
-                        <h1 class="mb-8 text-5xl font-bold text-black font-nexaBold">Sell Your Music
+                        <h1 class="mb-8 text-5xl font-bold text-white font-nexaBold tracking-widest">Sell Your Music
                             <br>Worldwide
                         </h1>
 
-                        <p class="mb-8 leading-relaxed text-gray-500 md:mb-12 xl:text-lg">
+                        <p class="mb-8 leading-relaxed text-white md:mb-12 xl:text-lg">
                             Get your music on Spotify, Apple Music, Wynk, Hungama, YouTube, JioSaavn, Instagram and
                             more. <br>
                             Keep 100% ownership of your music and stay in control of your career.
@@ -31,11 +31,12 @@ get_header();
                 </div>
             </div>
         </div>
-        <div class="bannerbg absolute top-0 left-0 right-0 px-[20%] pt-5 md:px-[30%] lg:px-[40%]">
-            <div class="banner-img overflow-hidden md:max-h-[460px]">
+        <div class="hidden bannerbg absolute top-0 left-0 right-0 z-[2] px-[20%] pt-5 md:px-[30%] lg:px-[40%]">
+            <div class="banner-img overflow-hidden">
                 <img src="<?php bloginfo('template_directory'); ?>/images/home-banner.png" alt="" class="w-full" />
             </div>
         </div>
+        <div id="webgl-canvas" class="absolute top-0 left-0 right-0 z-[1]"></div>
     </div>
 
 </section>
@@ -44,9 +45,9 @@ get_header();
 
 <!-- Stores/DSP's -->
 <section>
-    <div>
+    <div class="py-10 lg:py-14">
         <div class="container">
-            <div class="py-9 pt-14 sm:py-8 md:pt-10 lg:py-12 lg:pb-32">
+            <div>
                 <div class="mx-auto max-w-screen-2xl">
                     <div class="mb-10 md:mb-10">
                         <h2 class="text-[2rem] font-nexaBold font-black text-center capitalize leading-10 mb-2 md:mb-6 xl:text-[42px] lg:text-[32px] md:text-[36px]">
@@ -137,11 +138,12 @@ get_header();
             </div>
         </div>
     </div>
+
 </section>
 
 <!-- Services -->
 <section>
-    <div class="bg-serviceSec">
+    <div class="bg-secBgBG py-14">
         <div class="container">
             <div>
                 <div class="mb-[58px] sm:mb-[32px]">
@@ -161,7 +163,7 @@ get_header();
                                                 <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M17.3469 31.0134C17.3622 31.02 17.3789 31.0229 17.3956 31.0218C17.4222 31.0295 17.4495 31.035 17.4771 31.038C19.4003 31.4098 21.0586 32.6279 22.0002 34.3603C22.9604 32.6147 24.643 31.3934 26.5884 31.0299C26.6117 31.0196 26.6364 31.0141 26.6619 31.0134H26.6699L40.7442 28.6452V4L22.1303 7.13327C22.0437 7.14135 21.9564 7.14135 21.8698 7.13327L3.25586 4V28.6452L17.306 31.0053C17.3183 31.0119 17.3325 31.0148 17.3467 31.0133L17.3469 31.0134ZM13.4531 21.8979C12.6343 21.1009 12.2235 20.7011 12.2227 20.3005C12.222 19.8972 12.6368 19.4931 13.4691 18.6822L13.4691 18.6822L13.4691 18.6822C13.8433 18.3177 14.3018 17.871 14.8449 17.3052C14.8591 16.499 14.8474 15.8444 14.8378 15.3133C14.8173 14.1715 14.807 13.6004 15.0875 13.3198C15.3682 13.039 15.9402 13.0494 17.0848 13.0701C17.6067 13.0796 18.2475 13.0912 19.034 13.0783C19.6038 12.5229 20.0513 12.0548 20.4153 11.674C21.2052 10.8478 21.6014 10.4333 21.9985 10.4325C22.3981 10.4318 22.7986 10.8503 23.6022 11.6901C23.9635 12.0677 24.4062 12.5303 24.9669 13.0783C25.766 13.0927 26.4147 13.0808 26.9411 13.0712C28.0659 13.0506 28.632 13.0402 28.9118 13.3181C29.1952 13.5996 29.1849 14.1767 29.1642 15.3385C29.1548 15.865 29.1433 16.5116 29.1561 17.3052C29.7065 17.8801 30.1705 18.3317 30.5478 18.699C31.3666 19.4959 31.7774 19.8958 31.7782 20.2964C31.779 20.6997 31.3642 21.1037 30.5319 21.9146L30.5318 21.9146C30.1577 22.2791 29.6991 22.7258 29.1561 23.2916C29.1418 24.0979 29.1536 24.7525 29.1631 25.2836C29.1836 26.4253 29.1939 26.9965 28.9135 27.277C28.6327 27.5579 28.0607 27.5475 26.9161 27.5268H26.916H26.916C26.3942 27.5173 25.7534 27.5057 24.9669 27.5185C24.3972 28.0739 23.9496 28.5421 23.5856 28.9228C22.7958 29.7491 22.3995 30.1636 22.0025 30.1643C21.6028 30.1651 21.2023 29.7466 20.3987 28.9067C20.0375 28.5292 19.5948 28.0665 19.034 27.5185C18.2349 27.5042 17.586 27.516 17.0596 27.5257C15.9348 27.5463 15.3688 27.5566 15.089 27.2788C14.8057 26.9974 14.816 26.4204 14.8367 25.2591V25.259V25.259C14.8461 24.7324 14.8576 24.0857 14.8449 23.292V23.2916C14.2944 22.7168 13.8305 22.2652 13.4531 21.8979ZM19.3309 25.8436C19.5473 25.8429 19.7554 25.9289 19.9096 26.0825L21.9546 28.1573L23.9996 26.0825C24.1538 25.9289 24.3618 25.8429 24.5783 25.8436H27.4787V22.9129C27.478 22.6942 27.5631 22.4839 27.7152 22.3281L29.7685 20.2618L27.7152 18.1954C27.5631 18.0396 27.478 17.8294 27.4787 17.6107V14.6799H24.5783C24.3618 14.6807 24.1538 14.5947 23.9996 14.441L21.9546 12.3662L19.9096 14.441C19.7554 14.5946 19.5473 14.6807 19.3309 14.6799H16.4304V17.6107C16.4312 17.8294 16.346 18.0396 16.194 18.1954L14.1406 20.2618L16.194 22.3281C16.346 22.4839 16.4311 22.6942 16.4304 22.9129V25.8436H19.3309ZM3.25586 30.3193L17.1393 32.6581H17.139C18.1153 32.8445 19.0148 33.3204 19.7228 34.0251C20.4313 34.7301 20.9162 35.6322 21.1163 36.617L3.25586 33.6004V30.3193ZM42.3707 8.79395V34.2584C42.3721 34.6621 42.0818 35.0072 41.6861 35.0717C41.6328 35.075 38.3534 35.6275 34.4861 36.279L34.4843 36.2793C28.9042 37.2194 22.1013 38.3655 22.0001 38.3655C21.899 38.3655 15.1018 37.2204 9.52311 36.2805L9.52081 36.2801C5.65073 35.6281 2.36762 35.075 2.31422 35.0717C1.91846 35.0072 1.62818 34.6621 1.62963 34.2584V8.79395H0V36.8297L22 40.0002L44 36.8297V8.79395H42.3707ZM40.7433 33.6004L22.8834 36.617H22.8828C23.08 35.6218 23.57 34.7102 24.2886 34.0022C25.0071 33.2942 25.9207 32.8231 26.9088 32.65L40.7433 30.3193V33.6004Z" fill="#1DA1F3" />
                                             </svg>
                                         </div>
-                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center">
+                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center text-black">
                                             Music <br>Distribution</h2>
                                         <p class="text-gray-9 text-center mt-2 leading-5 hidden lg:block">Keep 100%
                                             of your royalties, get free ISRCs &amp;
@@ -181,7 +183,7 @@ get_header();
                                                 <path d="M1.57287 41.7094C0.971115 41.7182 0.488238 42.2083 0.488238 42.81C0.488238 43.4118 0.971081 43.9018 1.57287 43.9107H29.544C30.1451 43.9015 30.6276 43.4114 30.6276 42.81C30.6276 42.2086 30.1451 41.7185 29.5436 41.7094H23.7249C25.0896 40.3532 26.1588 38.7291 26.8657 36.9399H21.9787C20.2809 36.9389 18.6931 36.0984 17.7376 34.6947L13.922 38.4517C13.8925 38.4517 8.45542 33.0952 8.45542 33.0952C7.85825 32.5088 7.47561 31.7387 7.36953 30.9083C6.84082 27.3483 11.4108 25.1807 13.9072 27.7459C14.6007 27.0564 15.5294 26.6548 16.5069 26.6221C17.4843 26.5893 18.4379 26.928 19.1756 27.5697C20.0627 26.9798 21.1043 26.6657 22.1696 26.6673H26.8657C23.1933 17.2046 10.5401 14.818 3.69383 22.3236C-1.39867 27.5468 -1.19162 36.7155 4.1046 41.7093L1.57287 41.7094Z" fill="currentColor" />
                                             </svg>
                                         </div>
-                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center" style="height: 38.375px;">
+                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center text-black" style="height: 38.375px;">
                                             Youtube <br>Content Id </h2>
                                         <p class="text-gray-9 text-center mt-2 leading-5 hidden lg:block">Lorem
                                             ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -199,7 +201,7 @@ get_header();
                                                 <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd" d="M42.4888 14.358L42.4895 14.3588L42.4887 14.3585C42.4887 14.3584 42.4888 14.3582 42.4888 14.358ZM39.0635 10.9039L42.4888 14.358C42.7445 12.3649 42.403 10.3398 41.5085 8.54442C40.6141 6.74855 39.2079 5.26437 37.4708 4.28334C33.9262 2.28448 28.202 2.12516 22.5118 7.44613L26.1979 10.7848C26.3661 10.9384 26.4648 11.1551 26.4711 11.3843C26.4773 11.6135 26.3907 11.835 26.231 11.998C23.9277 14.3242 19.869 14.4745 17.6492 12.3408C17.6492 12.3408 4.80198 25.1992 4.75213 25.2578C4.29727 25.8305 4.16117 26.5973 4.39106 27.2938C4.62126 27.9904 5.18564 28.521 5.89007 28.7031C6.59419 28.8853 7.34192 28.6935 7.87517 28.1944H7.87484L13.491 22.5306C13.8137 22.2047 14.3364 22.2047 14.6591 22.5306C14.9815 22.8562 14.9815 23.3845 14.6591 23.7101C14.6591 23.7101 9.06008 29.3659 9.05188 29.3822C8.51306 29.9276 8.3035 30.7216 8.50191 31.4655C8.69996 32.2094 9.2762 32.79 10.0134 32.9884C10.7504 33.1868 11.5361 32.9732 12.0749 32.4276V32.428L17.5999 26.8056C17.753 26.6463 17.9632 26.5552 18.1833 26.5529C18.4033 26.5509 18.6149 26.6373 18.7716 26.7933C18.9281 26.9493 19.0166 27.1623 19.0173 27.3845C19.0179 27.6065 18.9307 27.8198 18.7752 27.9768V27.9771C18.7752 27.9771 13.2753 33.5902 13.2592 33.5985C12.741 34.1685 12.5636 34.974 12.7932 35.712C13.023 36.4499 13.6248 37.008 14.3725 37.1763C15.1202 37.3442 15.8997 37.0968 16.4179 36.5268V36.5178L21.9428 30.9468C22.2682 30.6209 22.7929 30.6209 23.1182 30.9468C23.2733 31.1032 23.3602 31.3155 23.3602 31.5367C23.3602 31.758 23.2733 31.9703 23.1182 32.1266L17.6923 37.6055C17.309 38.1567 17.2027 38.8575 17.405 39.4994C17.6077 40.1413 18.096 40.6504 18.7247 40.8759C19.3531 41.1012 20.05 41.0167 20.6078 40.6474H20.6081L27.7902 33.525C27.6206 33.4031 27.4603 33.2689 27.3097 33.1235L23.2488 29.0244C22.5749 28.3397 22.1967 27.4134 22.1967 26.4479C22.1967 25.4823 22.5749 24.5559 23.2488 23.871C23.8151 23.3046 24.5474 22.9376 25.3365 22.825C24.8928 21.7621 24.9738 20.5499 25.5552 19.5569C26.1363 18.5639 27.1494 17.9081 28.2854 17.7888C27.9486 16.9091 27.9624 15.9318 28.3241 15.062C28.6859 14.1925 29.367 13.4983 30.2249 13.1254C31.0828 12.7524 32.0503 12.7295 32.9242 13.0621C33.0223 12.2477 33.3837 11.4892 33.9527 10.9039C34.6332 10.2242 35.5514 9.84334 36.5081 9.84334C37.465 9.84334 38.3833 10.2243 39.0635 10.9039ZM20.7186 8.1113C17.0982 4.46198 13.3877 3.00035 10.1398 3.00035C7.44797 2.97787 4.85769 4.036 2.94041 5.94104C-0.713123 9.61585 -1.73171 16.5066 4.40968 23.1875L17.0454 10.5758C17.3717 10.2531 17.8942 10.2531 18.2208 10.5758L18.718 11.0765C20.0853 12.4551 22.6116 12.5298 24.3511 11.3853L20.7186 8.1113ZM5.13676 20.2227C4.75633 20.4753 4.24664 20.3834 3.97679 20.014C1.61614 16.5812 1.02776 12.9653 2.31274 9.84037C2.49443 9.42669 2.96997 9.2339 3.38547 9.40586C3.80067 9.57781 4.00467 10.052 3.84528 10.4753C2.7843 13.0678 3.31497 16.1136 5.3447 19.0532L5.34437 19.0536C5.60149 19.4352 5.50933 19.9544 5.13676 20.2222L5.13676 20.2227ZM4.66352 8.3458C4.32834 8.3458 4.02629 8.1421 3.89805 7.82993C3.76982 7.51777 3.84066 7.15833 4.07744 6.91957C4.31456 6.68049 4.67105 6.60906 4.98067 6.73836C5.29028 6.86766 5.49229 7.17221 5.49229 7.51016C5.49328 7.73205 5.40604 7.94533 5.25059 8.10208C5.0948 8.25915 4.8836 8.34678 4.66353 8.34579L4.66352 8.3458ZM42.8131 20.9931C42.2161 21.2502 41.5317 21.1911 40.9867 20.8352L34.8542 14.6586C34.4831 14.1117 34.4085 13.4129 34.6554 12.7986C34.9023 12.1843 35.4378 11.7361 36.0808 11.6051C36.7241 11.4746 37.3894 11.6786 37.852 12.1491L43.4275 17.7802C43.8868 18.2436 44.0879 18.9075 43.9647 19.5514C43.8417 20.1957 43.4101 20.7356 42.8131 20.9931ZM39.8063 22.0727C40.0578 22.4521 40.1716 22.908 40.1275 23.3625C40.0835 23.8171 39.8849 24.2424 39.5656 24.5654C39.2687 24.8601 38.8872 25.0529 38.4759 25.116C38.0642 25.1795 37.6437 25.1097 37.2734 24.9176C37.0988 24.8253 30.2137 17.91 30.2137 17.91C29.7195 17.4105 29.5264 16.6829 29.7073 16.0011C29.8882 15.3189 30.4153 14.7863 31.0903 14.6035C31.7651 14.4208 32.4852 14.6158 32.9794 15.1152L39.8063 22.0727ZM35.538 28.3756C35.9073 28.0126 36.1132 27.5124 36.1076 26.992L36.1075 26.9921C36.1049 26.5875 35.981 26.1935 35.7522 25.8612V25.847C35.6862 25.7582 29.9902 20.0075 29.9902 20.0075C29.4983 19.5257 28.7911 19.3419 28.13 19.5244C27.4689 19.7068 26.9525 20.2282 26.7718 20.8958C26.5911 21.5633 26.7728 22.2778 27.2502 22.7744C27.2502 22.7744 33.1025 28.6509 33.2927 28.7505C33.6585 28.9337 34.0722 28.996 34.4752 28.9287C34.8781 28.8617 35.25 28.668 35.538 28.3756ZM31.2516 31.9411C31.6231 31.5756 31.8302 31.0728 31.8246 30.5493L31.8246 30.5493C31.8242 30.0982 31.6717 29.6604 31.3923 29.3083C31.3453 29.2444 27.4389 25.3223 27.0551 24.9369L27.0249 24.9066C26.6525 24.5949 26.1771 24.4365 25.6939 24.4628C25.2106 24.4893 24.755 24.6988 24.418 25.0496C24.0528 25.4187 23.8477 25.9192 23.8477 26.441C23.8477 26.9629 24.0528 27.4634 24.418 27.8325L28.4866 31.9411C28.8538 32.3105 29.3508 32.518 29.8693 32.518C30.3873 32.518 30.8848 32.3105 31.2516 31.9411Z" fill="#1DA1F3" />
                                             </svg>
                                         </div>
-                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center" style="height: 38.375px;">
+                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center text-black" style="height: 38.375px;">
                                             Royalties & <br>Licenses</h2>
                                         <p class="text-gray-9 text-center mt-2 leading-5 hidden lg:block">Lorem
                                             ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -217,7 +219,7 @@ get_header();
                                                 <path d="M38.7211 7.30374C37.327 7.157 36.0798 8.11004 35.8597 9.5028L34.5393 20.9371C34.4662 21.3768 34.0992 21.6703 33.7323 21.5967H33.6591C33.2189 21.5967 32.852 21.2301 32.9252 20.7904L33.5854 5.98424C33.6586 4.59145 32.5582 3.41856 31.1642 3.34552C29.77 3.27241 28.596 4.37166 28.5229 5.76435L27.8627 20.5705C27.8627 21.0102 27.4957 21.3768 27.0556 21.3037C26.6886 21.3037 26.3217 20.9371 26.3217 20.5705L25.1476 3.41882C25.0744 2.02604 23.8272 1 22.4331 1C21.0389 1.07311 19.9387 2.3191 20.0119 3.71188L21.039 20.2038C21.039 20.6436 20.6721 21.0833 20.232 21.0101H19.9387C19.5717 21.0101 19.2785 20.7172 19.2048 20.3506L16.8567 6.79053C16.6366 5.39774 15.3157 4.44474 13.9222 4.73819C12.528 4.95805 11.5741 6.2777 11.8678 7.66984C11.8678 7.66984 13.9222 18.6645 14.2159 21.0833C14.5092 23.4291 14.6561 24.8214 14.8029 26.8736C14.8761 28.0464 13.849 28.8527 12.6755 27.6799C12.6755 27.6799 10.4743 25.0411 9.22712 23.722C7.9799 22.476 6.58582 21.9628 5.33853 22.8426C3.94438 23.722 3.57753 25.5545 4.53144 26.8741C4.53144 26.8741 10.0342 35.8896 13.4825 39.628C14.9498 41.2406 16.9309 43 19.0585 43H30.3571C36.08 43 37.4009 37.356 38.2079 31.5657C39.015 25.7755 40.9961 10.0895 40.9961 10.0895C41.0688 8.76935 40.1153 7.45026 38.7213 7.30353L38.7211 7.30374ZM31.3109 32.5914L26.5422 37.3555C26.3221 37.5754 25.9552 37.5754 25.7351 37.3555L21.1127 32.7376C20.1587 31.7846 19.7923 30.3188 20.4525 29.0727C21.4796 27.0204 24.0477 26.8006 25.5151 28.1933L26.249 28.9265L26.9092 28.267C27.8632 27.3139 29.3304 26.9479 30.5777 27.6074C32.4847 28.6335 32.7784 31.1255 31.3111 32.5914L31.3109 32.5914Z" fill="currentColor" />
                                             </svg>
                                         </div>
-                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center" style="height: 38.375px;">
+                                        <h2 class="wayBoxTitle leading-[1.2em] text-[16px] title-font font-extrabold text-center text-black" style="height: 38.375px;">
                                             Promotions</h2>
                                         <p class="text-gray-9 text-center mt-2 leading-5 hidden lg:block">Lorem
                                             ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -238,9 +240,9 @@ get_header();
 
 <!-- Extra Features -->
 <section>
-    <div>
+    <div class="py-10  lg:py-12">
         <div class="container">
-            <div class="py-9 pt-14 lg:py-12">
+            <div>
                 <div class="mx-auto max-w-screen-2xl">
                     <!-- text - start -->
                     <div class="mb-10 md:mb-16">
@@ -260,7 +262,7 @@ get_header();
 
                     <div class="grid gap-4 sm:grid-cols-2 md:gap-8 xl:grid-cols-3">
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -268,14 +270,14 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">Unlimited Music</h3>
-                                <p class="text-gray-9 leading-5">Free yourself with unlimited music releases!</p>
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">Unlimited Music</h3>
+                                <p class="text-[#e5e5e5] leading-5">Free yourself with unlimited music releases!</p>
                             </div>
                         </div>
                         <!-- feature - end -->
 
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -283,14 +285,14 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">Royalties</h3>
-                                <p class="text-gray-9 leading-5">Keep 100% of your royalties, get free ISRCs &
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">Royalties</h3>
+                                <p class="text-[#e5e5e5] leading-5">Keep 100% of your royalties, get free ISRCs &
                                     Barcodes.</p>
                             </div>
                         </div>
                         <!-- feature - end -->
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -298,14 +300,14 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">YouTube Content ID</h3>
-                                <p class="text-gray-9 leading-5">YouTube Content ID & pre-orders at no extra cost.
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">YouTube Content ID</h3>
+                                <p class="text-[#e5e5e5] leading-5">YouTube Content ID & pre-orders at no extra cost.
                                 </p>
                             </div>
                         </div>
                         <!-- feature - end -->
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -313,13 +315,13 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">Report's</h3>
-                                <p class="text-gray-9 leading-5">Fully transparent reporting</p>
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">Report's</h3>
+                                <p class="text-[#e5e5e5] leading-5">Fully transparent reporting</p>
                             </div>
                         </div>
                         <!-- feature - end -->
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -327,14 +329,14 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">Unlimited Music</h3>
-                                <p class="text-gray-9 leading-5">Free yourself with unlimited music releases!</p>
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">Unlimited Music</h3>
+                                <p class="text-[#e5e5e5] leading-5">Free yourself with unlimited music releases!</p>
                             </div>
                         </div>
                         <!-- feature - end -->
 
                         <!-- feature - start -->
-                        <div class="flex divide-x divide-gray-5 rounded-lg border border-gray-5">
+                        <div class="flex divide-x divide-white rounded-lg border border-white">
                             <div class="flex items-center p-2 text-primary md:p-4">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 md:h-8 md:w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
@@ -342,8 +344,8 @@ get_header();
                             </div>
 
                             <div class="p-4 md:p-6">
-                                <h3 class="mb-2 text-lg font-semibold md:text-xl">Royalties</h3>
-                                <p class="text-gray-9 leading-5">Keep 100% of your royalties, get free ISRCs &
+                                <h3 class="mb-2 text-lg font-semibold md:text-xl text-white">Royalties</h3>
+                                <p class="text-[#e5e5e5] leading-5">Keep 100% of your royalties, get free ISRCs &
                                     Barcodes.</p>
                             </div>
                         </div>
@@ -351,7 +353,7 @@ get_header();
 
                     </div>
 
-                    <div class="text-center pt-7">
+                    <div class="text-center py-5 pb-10 lg:pb-18 lg:pt-10">
                         <a href="/" class="btn btn-primary px-14">Learn More</a>
                     </div>
 
@@ -363,7 +365,7 @@ get_header();
 
 <!-- Why Choose Us -->
 <section>
-    <div class="py-5 pt-10 pb-10">
+    <div class="bg-secBgBG py-5 pt-10 pb-10">
         <div class="container">
             <div>
                 <div class="md:flex md:flex-wrap">
@@ -1718,7 +1720,7 @@ get_header();
 
 <!-- Testimonials -->
 <section>
-    <div class="pt-10 lg:pt-14 xl:pt-24">
+    <div class="bg-secBgBG py-10 pb-14 lg:py-14 xl:py-24">
         <div class="container">
             <div>
                 <div>
@@ -1852,134 +1854,134 @@ get_header();
             <div>
                 <!-- text - start -->
                 <div class="mb-7 md:mb-16 xl:mb-12">
-                        <h2 class="text-[2rem] font-nexaBold font-black text-center capitalize leading-10 mb-2 md:mb-6 xl:text-[42px] lg:text-[32px] md:text-[36px]">
-                            FAQ's</h2>
+                    <h2 class="text-[2rem] font-nexaBold font-black text-center capitalize leading-10 mb-2 md:mb-6 xl:text-[42px] lg:text-[32px] md:text-[36px]">
+                        FAQ's</h2>
 
 
-                        <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Lorem ipsum dolor
-                            sit amet
-                            consectetur adipisicing elit.</p>
+                    <p class="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">Lorem ipsum dolor
+                        sit amet
+                        consectetur adipisicing elit.</p>
+                </div>
+                <!-- text - end -->
+                <div class="accordion-group accordion-group-hover">
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-9" class="accordion-toggle" checked />
+                        <label for="toggle-9" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
+                            <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
+                                music
+                                distribution.</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
+                                a single
+                                one-time fee to get your music online. With no annual fee to keep your songs in
+                                the stores —
+                                no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
+                        </div>
                     </div>
-                    <!-- text - end -->
-                    <div class="accordion-group accordion-group-hover">
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-9" class="accordion-toggle" checked />
-                            <label for="toggle-9" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
-                                <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
-                                    music
-                                    distribution.</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
-                                    a single
-                                    one-time fee to get your music online. With no annual fee to keep your songs in
-                                    the stores —
-                                    no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
-                            </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-10" class="accordion-toggle" />
+                        <label for="toggle-10" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Widest coverage on the market</span>
+                            <span class="text-sm text-content3 font-normal">You keep 100% of your
+                                copyrights</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">You keep 100% of your copyrights</div>
                         </div>
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-10" class="accordion-toggle" />
-                            <label for="toggle-10" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Widest coverage on the market</span>
-                                <span class="text-sm text-content3 font-normal">You keep 100% of your
-                                    copyrights</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">You keep 100% of your copyrights</div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-11" class="accordion-toggle" />
-                            <label for="toggle-11" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
-                                <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
-                                    music
-                                    distribution.</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
-                                    a single
-                                    one-time fee to get your music online. With no annual fee to keep your songs in
-                                    the stores —
-                                    no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-12" class="accordion-toggle" />
-                            <label for="toggle-12" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
-                                <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
-                                    music
-                                    distribution.</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
-                                    a single
-                                    one-time fee to get your music online. With no annual fee to keep your songs in
-                                    the stores —
-                                    no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-13" class="accordion-toggle" />
-                            <label for="toggle-13" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Widest coverage on the market</span>
-                                <span class="text-sm text-content3 font-normal">You keep 100% of your
-                                    copyrights</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">You keep 100% of your copyrights</div>
-                            </div>
-                        </div>
-                        <div class="accordion">
-                            <input type="checkbox" id="toggle-14" class="accordion-toggle" />
-                            <label for="toggle-14" class="accordion-title relative !pr-12 !pl-2  lg:!pr-10">
-                                <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
-                                <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
-                                    music
-                                    distribution.</span>
-                                <span class="accordion-arrow w-[25px] h-[25px] absolute top-[50%] right-3 -translate-y-[50%]">
-                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
-                                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
-                                    </svg>
-                                </span>
-                            </label>
-                            <div class="accordion-content text-content2">
-                                <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
-                                    a single
-                                    one-time fee to get your music online. With no annual fee to keep your songs in
-                                    the stores —
-                                    no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
-                            </div>
-                        </div>
-
                     </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-11" class="accordion-toggle" />
+                        <label for="toggle-11" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
+                            <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
+                                music
+                                distribution.</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
+                                a single
+                                one-time fee to get your music online. With no annual fee to keep your songs in
+                                the stores —
+                                no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-12" class="accordion-toggle" />
+                        <label for="toggle-12" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
+                            <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
+                                music
+                                distribution.</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
+                                a single
+                                one-time fee to get your music online. With no annual fee to keep your songs in
+                                the stores —
+                                no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-13" class="accordion-toggle" />
+                        <label for="toggle-13" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Widest coverage on the market</span>
+                            <span class="text-sm text-content3 font-normal">You keep 100% of your
+                                copyrights</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">You keep 100% of your copyrights</div>
+                        </div>
+                    </div>
+                    <div class="accordion">
+                        <input type="checkbox" id="toggle-14" class="accordion-toggle" />
+                        <label for="toggle-14" class="accordion-title relative bg-backgroundPrimaryDark !pr-12 !pl-2  lg:!pr-10 ">
+                            <span class="text-lg lg:text-xl">Pay once. Your music in stores forever.</span>
+                            <span class="text-sm text-content3 font-normal">With Revoke you get truly unlimited
+                                music
+                                distribution.</span>
+                            <span class="accordion-arrow w-[25px] h-[25px] text-white absolute top-[50%] right-3 -translate-y-[50%]">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="currentColor" height="100%" width="100%" version="1.1" id="Layer_1" viewBox="0 0 330 330" xml:space="preserve">
+                                    <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z" />
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="accordion-content text-content2">
+                            <div class="min-h-0">With Revoke you get truly unlimited music distribution. You pay
+                                a single
+                                one-time fee to get your music online. With no annual fee to keep your songs in
+                                the stores —
+                                no matter which pricing plan you're on! Don't pay extra to leave a legacy.</div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </div>
@@ -1988,6 +1990,174 @@ get_header();
 <?php
 get_footer();
 ?>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
+
+<script>
+    const particleWave = () => {
+        const heroBanner = document.querySelector(".heroSec");
+        let w = heroBanner.clientWidth;
+        let h = heroBanner.clientHeight;
+        const dpr = window.devicePixelRatio;
+
+        const fov = 60;
+        const fovRad = fov * (Math.PI / 180);
+        const dist = h / 2 / Math.tan(fovRad);
+
+        const clock = new THREE.Clock();
+        const pointSize = 4 * dpr;
+
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(w, h);
+        renderer.setClearColor(new THREE.Color("#fff"), 1.0);
+        renderer.setPixelRatio(dpr);
+
+        const container = document.getElementById("webgl-canvas");
+        container.appendChild(renderer.domElement);
+
+        const camera = new THREE.PerspectiveCamera(fov, w / h, 1, dist * 8);
+        camera.position.x = 0;
+        camera.position.y = 20;
+        camera.position.z = 150;
+
+        const scene = new THREE.Scene();
+
+        // TODO: This fog isn't working for some reason
+        const fogColor = "#000"; // white
+        const near = 1.8;
+        const far = 2;
+        scene.fog = new THREE.Fog(fogColor, near, far);
+        scene.background = new THREE.Color(fogColor);
+
+        const geo = new THREE.BufferGeometry();
+        const positions = [];
+
+        const width = 200 * (w / h);
+        const depth = 100;
+        const distance = 5;
+
+        for (let x = 0; x < width; x += distance) {
+            for (let z = 0; z < depth; z += distance) {
+                positions.push(-width / 2 + x, -30, -depth / 2 + z);
+            }
+        }
+        const positionAttribute = new THREE.Float32BufferAttribute(positions, 3);
+        geo.setAttribute("position", positionAttribute);
+
+        const mat = new THREE.ShaderMaterial({
+            uniforms: {
+                u_time: {
+                    value: 0.0
+                },
+                color1: {
+                    value: new THREE.Color("#66d0b6")
+                },
+                color2: {
+                    value: new THREE.Color("#6a569c")
+                },
+                color3: {
+                    value: new THREE.Color("#f16078")
+                },
+                color4: {
+                    value: new THREE.Color("#6a569c")
+                },
+                color5: {
+                    value: new THREE.Color("#66d0b6")
+                },
+                resolution: {
+                    type: "v2",
+                    value: new THREE.Vector2(w * dpr, h * dpr)
+                },
+                pointSize: {
+                    value: pointSize
+                }
+            },
+            vertexShader: `
+        precision highp float;
+        #define M_PI 3.1415926535897932384626433832795
+        
+        uniform float u_time;
+        uniform float pointSize;
+        
+        void main() {
+          vec3 p = position;
+          p.y += (
+             cos(p.x / M_PI * 8.0 + u_time * 1.5) * 15.0 +
+             sin(p.z / M_PI * 8.0 + u_time * 1.5) * 15.0 + 
+             60.0
+           ) ;
+          
+          gl_PointSize = pointSize;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(p, 1.0);
+        }   
+    
+    `,
+            fragmentShader: `
+        precision highp float;
+        
+        uniform vec3 color1;
+        uniform vec3 color2;
+        uniform vec3 color3;
+        uniform vec3 color4;
+        uniform vec3 color5;
+        uniform vec2 resolution;
+        
+        void main() {
+          // create circles instead of squares
+          if ( length( gl_PointCoord - vec2( 0.5, 0.5 ) ) > 0.475 ) discard;
+          
+          float x = gl_FragCoord.x;
+          float step1 = 0.25;
+          float step2 = 0.45;
+          float step3 = 0.55;
+          float step4 = 0.75;
+          float step5 = 1.00;
+          
+          float mixValue = x / resolution.x;
+          
+          // create color stops using 'mix', and convert the progress through each 'step'
+          // to a value between 0 and 1
+          vec3 mixedColor;
+          if(mixValue < step1) {
+            mixedColor = mix(color1, color2, mixValue / step1);
+          } else if (mixValue >= step1 && mixValue < step2) {
+            mixedColor = mix(color2, color3, ((mixValue - step1) / (step2 - step1)));
+          } else if (mixValue >= step2 && mixValue < step3) {
+            mixedColor = color3;
+          } else if (mixValue >= step3 && mixValue < step4) {
+            mixedColor = mix(color3, color4, ((mixValue - step3) / (step4 - step3)));
+          } else {
+            mixedColor = mix(color4, color5, ((mixValue - step4) / (step5 - step4)));
+          }
+          
+          gl_FragColor = vec4(mixedColor, 1.0);
+        }
+    `
+        });
+
+        const mesh = new THREE.Points(geo, mat);
+        scene.add(mesh);
+
+        function render() {
+            const time = clock.getElapsedTime();
+            mesh.material.uniforms.u_time.value = time;
+            renderer.render(scene, camera);
+            requestAnimationFrame(render);
+        }
+        render();
+
+        function onWindowResize() {
+            w = heroBanner.clientWidth;
+            h = heroBanner.clientHeight;
+            camera.aspect = w / h;
+            camera.updateProjectionMatrix();
+            renderer.setSize(w, h);
+        }
+        window.addEventListener("resize", onWindowResize);
+    };
+
+    window.addEventListener("load", particleWave);
+</script>
+
 <script>
     var swiper = new Swiper(".testimonialSwiper", {
         slidesPerView: 1,
@@ -2012,15 +2182,17 @@ get_footer();
 </script>
 <script>
     var swiper = new Swiper(".storesSwiper", {
-        slidesPerView: 1,
-        spaceBetween: 10,
+        slidesPerView: 2,
+        spaceBetween: 0,
         pagination: {
             el: ".storesSwiperPagination",
             clickable: true,
         },
         loop: true,
+        speed: 5000,
         autoplay: {
-            delay: 3000,
+            enabled: true,
+            delay: 1000,
         },
         breakpoints: {
             480: {
