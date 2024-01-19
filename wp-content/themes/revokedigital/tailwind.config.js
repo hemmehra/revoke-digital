@@ -3,8 +3,9 @@
 // npx tailwindcss -i ./css/tailwind-input.css -o ./css/style.css --watch
 module.exports = {
   content: [
-    "./*.{html,php,twig}",
-    "./template-parts/content/*.{html,php,twig}",
+    "./*.{html,php}",
+    "./template-parts/content/*.{html,php}",
+    "./pages/*.{html,php}",
   ],
   theme: {
     extend: {},

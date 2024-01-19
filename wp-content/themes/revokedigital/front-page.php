@@ -24,7 +24,7 @@ get_header();
 
                         <div class="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
 
-                            <a href="#" class="btn btn-outline-primary sm:px-[50px]">Start
+                            <a href="<?= get_permalink(26); ?>" class="btn btn-outline-primary sm:px-[50px]">Start
                                 now</a>
                         </div>
                     </div>
@@ -132,7 +132,7 @@ get_header();
                         </div>
                     </div>
                     <div class="text-center pb-8">
-                        <a href="/" class="btn btn-outline-primary lg:px-14">View All</a>
+                        <a href="<?= get_permalink(28); ?>" class="btn btn-outline-primary lg:px-14">View All</a>
                     </div>
                 </div>
             </div>
@@ -230,7 +230,7 @@ get_header();
 
                     </div>
                     <div class="text-center py-5 pb-10 lg:pb-18 lg:pt-10">
-                        <a href="/" class="btn btn-primary lg:px-14">Learn More</a>
+                        <a href="<?= get_permalink(28); ?>" class="btn btn-primary lg:px-14">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -354,7 +354,7 @@ get_header();
                     </div>
 
                     <div class="text-center py-5 pb-10 lg:pb-18 lg:pt-10">
-                        <a href="/" class="btn btn-primary px-14">Learn More</a>
+                        <a href="<?= get_permalink(28); ?>" class="btn btn-primary px-14">Learn More</a>
                     </div>
 
                 </div>
@@ -1710,6 +1710,9 @@ get_header();
                         </div>
                         <!-- feature - end -->
                     </div>
+                    <div class="text-center py-5 pb-10 lg:text-left lg:pb-18 lg:pt-10">
+                        <a href="<?= get_permalink(463); ?>" class="btn btn-primary px-14">Learn More</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1982,6 +1985,9 @@ get_header();
                     </div>
 
                 </div>
+                <div class="text-center py-5 pb-10 lg:pb-18 lg:pt-10">
+                    <a href="<?= get_permalink(465); ?>" class="btn btn-primary px-14">View All</a>
+                </div>
             </div>
         </div>
     </div>
@@ -1990,8 +1996,7 @@ get_header();
 <?php
 get_footer();
 ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r125/three.min.js"></script>
-
+<script src="<?php bloginfo('template_directory'); ?>/js/three-page-home.min.js"></script>
 <script>
     const particleWave = () => {
         const heroBanner = document.querySelector(".heroSec");

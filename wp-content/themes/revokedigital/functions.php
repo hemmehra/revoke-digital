@@ -670,3 +670,18 @@ add_action('after_setup_theme', 'remove_admin_bar');
 function remove_admin_bar() {
 	show_admin_bar(false);
 }
+
+
+add_action('wp_ajax_revoke_digital_login', 'revoke_digital_login');
+add_action('wp_ajax_nopriv_revoke_digital_login', 'revoke_digital_login');
+function revoke_digital_login()
+{
+	$response = [];
+	$response['status'] = 'error';
+	$response['message'] = 'invalid login credentials!';
+
+	header('Content-Type: application/json; charset=utf-8');
+	echo json_encode($response);
+	die();
+}
+

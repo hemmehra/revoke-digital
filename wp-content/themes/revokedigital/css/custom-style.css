@@ -141,6 +141,19 @@
 .wpcf7-response-output {
     color: #000000 !important;
 }
+.about-page-sec{
+    overflow: hidden !important;
+} 
+.parsley-errors-list>li{
+    color: #f00 !important;
+}
+
+@media screen and (max-width: 639px) {
+    .contact_form_section .form_group_sec .width_50 {
+        width: 100%;
+    }
+}
+
 
 @media screen and (max-width: 650px) {
     .contact_form_left_main:after {

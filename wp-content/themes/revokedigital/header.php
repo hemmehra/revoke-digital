@@ -24,6 +24,9 @@
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/style.css?v=<?= rand(0, 9999) ?>">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/custom-style.css?v=<?= rand(0, 9999) ?>">
 	<?php wp_head(); ?>
+	<script type="text/javascript">
+		var ajaxurl = "<?php echo admin_url('admin-ajax.php'); ?>";
+	</script>
 </head>
 
 <body <?php body_class(); ?>>
@@ -33,7 +36,7 @@
 		<!-- Header -->
 		<header>
 			<div class="MainHeadSec h-[80px] md:h-[65px] shadow-[none]" id="MainHeadSec">
-				<div class="navbar-sticky navbar-glass navbar px-0 transition-all ease-in shadow-[none] MainHeadSecInner" id="MainHeadSecInner">
+				<div class="navbar-sticky navbar-glass navbar px-0 transition-all ease-in shadow-[none] border-b-[1px] border-[#333] MainHeadSecInner" id="MainHeadSecInner">
 					<div class="container">
 						<div class="head-inner">
 							<div class="flex">
@@ -41,32 +44,32 @@
 									<a href="/" class="navbar-item pl-0 sm:px-0">
 										<span class="md:hidden text">
 											<svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 126 123" fill="none">
-												<path d="M68.5867 37.6931H21.9466L0 -0.000115898H46.6401L47.7333 1.86655L68.5867 37.6931Z" fill="url(#paint0_linear_4_243)" />
-												<path d="M67.5468 47.7466L24.0801 122.227L1.78688 82.5201L1.72021 82.4133L21.5202 47.7466H67.5468Z" fill="url(#paint1_linear_4_243)" />
-												<path d="M117.734 122.093L82.7605 122.373L82.3871 121.72L59.5605 82.5202L59.1738 81.84L76.7605 51.7202L94.6939 82.5202L99.2939 90.4267L117.734 122.093Z" fill="url(#paint2_linear_4_243)" />
-												<mask id="mask0_4_243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="58" y="0" width="68" height="81">
+												<path d="M68.5867 37.6931H21.9466L0 -0.000115898H46.6401L47.7333 1.86655L68.5867 37.6931Z" fill="url(#paint0_linear_4_243h)" />
+												<path d="M67.5468 47.7466L24.0801 122.227L1.78688 82.5201L1.72021 82.4133L21.5202 47.7466H67.5468Z" fill="url(#paint1_linear_4_243h)" />
+												<path d="M117.734 122.093L82.7605 122.373L82.3871 121.72L59.5605 82.5202L59.1738 81.84L76.7605 51.7202L94.6939 82.5202L99.2939 90.4267L117.734 122.093Z" fill="url(#paint2_linear_4_243h)" />
+												<mask id="mask0_4_243h" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="58" y="0" width="68" height="81">
 													<path d="M125.747 41.4399V41.4534L125.467 41.9599L104.84 80.1599L58.1602 1.20954e-05H101.787C102.533 1.28001 103.373 2.7734 104.347 4.4534C109.32 13.0667 117.147 26.5999 125.747 41.4399Z" fill="white" />
 												</mask>
-												<g mask="url(#mask0_4_243)">
-													<path d="M125.747 41.4399V41.4534L125.467 41.9599L104.84 80.1599L58.1602 1.20954e-05H101.787C102.533 1.28001 103.373 2.7734 104.347 4.4534C109.32 13.0667 117.147 26.5999 125.747 41.4399Z" fill="url(#paint3_linear_4_243)" />
+												<g mask="url(#mask0_4_243h)">
+													<path d="M125.747 41.4399V41.4534L125.467 41.9599L104.84 80.1599L58.1602 1.20954e-05H101.787C102.533 1.28001 103.373 2.7734 104.347 4.4534C109.32 13.0667 117.147 26.5999 125.747 41.4399Z" fill="url(#paint3_linear_4_243h)" />
 												</g>
 												<defs>
-													<linearGradient id="paint0_linear_4_243" x1="0" y1="18.8532" x2="68.5857" y2="18.8532" gradientUnits="userSpaceOnUse">
+													<linearGradient id="paint0_linear_4_243h" x1="0" y1="18.8532" x2="68.5857" y2="18.8532" gradientUnits="userSpaceOnUse">
 														<stop stop-color="#86CF41" />
 														<stop offset="0.994413" stop-color="#50C064" />
 														<stop offset="1" stop-color="#50C064" />
 													</linearGradient>
-													<linearGradient id="paint1_linear_4_243" x1="1.72021" y1="84.9866" x2="67.5448" y2="84.9866" gradientUnits="userSpaceOnUse">
+													<linearGradient id="paint1_linear_4_243h" x1="1.72021" y1="84.9866" x2="67.5448" y2="84.9866" gradientUnits="userSpaceOnUse">
 														<stop stop-color="#86CF41" />
 														<stop offset="0.994413" stop-color="#50C064" />
 														<stop offset="1" stop-color="#50C064" />
 													</linearGradient>
-													<linearGradient id="paint2_linear_4_243" x1="59.1738" y1="87.0401" x2="117.734" y2="87.0401" gradientUnits="userSpaceOnUse">
+													<linearGradient id="paint2_linear_4_243h" x1="59.1738" y1="87.0401" x2="117.734" y2="87.0401" gradientUnits="userSpaceOnUse">
 														<stop stop-color="#86CF41" />
 														<stop offset="0.994413" stop-color="#50C064" />
 														<stop offset="1" stop-color="#50C064" />
 													</linearGradient>
-													<linearGradient id="paint3_linear_4_243" x1="58.1602" y1="40.08" x2="125.74" y2="40.08" gradientUnits="userSpaceOnUse">
+													<linearGradient id="paint3_linear_4_243h" x1="58.1602" y1="40.08" x2="125.74" y2="40.08" gradientUnits="userSpaceOnUse">
 														<stop stop-color="#86CF41" />
 														<stop offset="0.994413" stop-color="#50C064" />
 														<stop offset="1" stop-color="#50C064" />
@@ -249,7 +252,7 @@
 										</div>
 									</div>
 									<div class="flex">
-										<a class="btn btn-primary">Client Login</a>
+										<a href="<?= get_permalink(499); ?>" class="btn btn-primary">Client Login</a>
 										<label for="drawer-left" class="py-2.5 pl-2.5 cursor-pointer lg:hidden">
 											<i class="h-[3px] w-8 bg-primary block"></i>
 											<i class="h-[3px] w-5 bg-primary block my-1"></i>
@@ -272,7 +275,7 @@
 							<section class="sidebar-title items-center p-4">
 								<a href="/">
 									<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 129 128" fill="none">
-										<path d="M95.0066 0.093306H33.8306C15.4 0.093306 0.459961 15.0267 0.459961 33.4533V94.64C0.459961 113.067 15.4 128 33.8306 128H95.0066C113.437 128 128.376 113.067 128.376 94.64V33.4533C128.376 15.0267 113.437 0.093306 95.0066 0.093306Z" fill="#211D1D" />
+										<path d="M95.0066 0.093306H33.8306C15.4 0.093306 0.459961 15.0267 0.459961 33.4533V94.64C0.459961 113.067 15.4 128 33.8306 128H95.0066C113.437 128 128.376 113.067 128.376 94.64V33.4533C128.376 15.0267 113.437 0.093306 95.0066 0.093306Z" fill="#404040" />
 										<path d="M68.2505 48.2933H36.9812L22.2759 23.04H53.5385L54.2665 24.28L68.2505 48.2933Z" fill="white" />
 										<path d="M67.5545 55.04L38.4145 104.973L23.4745 78.3466H23.4705L23.4292 78.28L36.7039 55.04H67.5545Z" fill="white" />
 										<path d="M101.194 104.88L77.7505 105.053L77.4985 104.627L62.1998 78.3466L61.9385 77.8933L73.7251 57.7067L85.7505 78.3466L88.8318 83.6533L101.194 104.88Z" fill="white" />

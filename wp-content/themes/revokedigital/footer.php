@@ -19,6 +19,27 @@
 
 <!-- Footer -->
 <footer>
+	<?php 
+	if(!is_page(26)):
+	?>
+	<div class="bg-black py-6 pl-0 md:py-8 lg:py-12">
+		<div class="container">
+			<div class="flex overflow-hidden rounded-lg">
+				<div class="flex flex-col items-center text-center justify-between gap-4 rounded-lg bg-gray-1 p-4 w-full md:flex-row md:text-left md:px-7">
+					<div class="w-full md:w-2/3">
+						<h2 class="text-3xl font-bold md:text-3xl">Grow Your <span class="text-primary">Career</span><br class="lg:hidden"> With Help of Us</h2>
+						<p>This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text.</p>
+					</div>
+
+					<div class="w-full md:w-1/3 md:text-right">
+						<a href="<?= get_permalink(26); ?>" class="btn btn-primary">Contact Now</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<?php endif; ?>
+	</div>
 	<div>
 		<div class="container">
 			<div class="pb-16 pt-4 sm:pt-10 lg:pt-12">
@@ -28,7 +49,59 @@
 							<!-- logo - start -->
 							<div class="mb-4 lg:-mt-2">
 								<a href="/" class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl" aria-label="logo">
-									<img src="<?php bloginfo('template_directory'); ?>/images/logo-second-white.svg" alt="" class="w-full">
+									<svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1095 124" fill="none">
+										<path d="M69.1595 38.5063H22.5194L0.572754 0.813117H47.2129L48.3061 2.67978L69.1595 38.5063Z" fill="url(#paint0_linear_26_619f)"></path>
+										<path d="M68.1195 48.5598L24.6529 123.04L2.35964 83.3333L2.29297 83.2265L22.093 48.5598H68.1195Z" fill="url(#paint1_linear_26_619f)"></path>
+										<path d="M118.306 122.907L83.3333 123.187L82.9599 122.533L60.1333 83.3334L59.7466 82.6532L77.3333 52.5334L95.2666 83.3334L99.8666 91.2399L118.306 122.907Z" fill="url(#paint2_linear_26_619f)"></path>
+										<path d="M126.319 42.2531V42.2666L126.039 42.7731L105.413 80.9731L58.7329 0.813245H102.359C103.106 2.09324 103.946 3.58663 104.919 5.26663C109.893 13.88 117.719 27.4131 126.319 42.2531Z" fill="url(#paint3_linear_26_619f)"></path>
+										<path d="M197.107 33.773H172.48V62.4665H197.107C206.787 62.4665 212.613 57.093 212.613 48.1196C212.613 39.253 206.787 33.773 197.107 33.773ZM189.173 74.9465H172.6V102.826H158.947V21.173H197.213C214.72 21.173 226.147 31.9063 226.147 48.1196C226.147 61.653 218.107 71.3332 205.04 74.1332L229.88 102.826H212.853L189.173 74.9465Z" fill="currentColor"></path>
+										<path d="M300.827 21.173H240.747V33.5332H300.827V21.173Z" fill="url(#paint4_linear_26_619f)"></path>
+										<path d="M254.267 90.3465V67.4798H298.84V55.3465H240.747V102.826H301.52V90.3465H254.267Z" fill="currentColor"></path>
+										<path d="M388.906 21.173L355.186 102.826H340.493L306.653 21.173H321.36L335.12 55.1196L347.72 86.9598L374.213 21.173H388.906Z" fill="currentColor"></path>
+										<path d="M461.013 62C461.013 44.1466 449.573 32.0133 432.773 32.0133C415.866 32.0133 404.426 44.1466 404.426 62C404.426 79.8533 415.866 91.9864 432.773 91.9864C449.573 91.9864 461.013 79.8533 461.013 62ZM390.667 62C390.667 36.5733 407.573 19.4133 432.773 19.4133C457.866 19.4133 474.773 36.5733 474.773 62C474.773 87.4266 457.866 104.586 432.773 104.586C407.573 104.586 390.667 87.4266 390.667 62Z" fill="currentColor"></path>
+										<path d="M536.613 102.826L501.386 66.1999V102.826H487.613V21.173H501.386V56.053L533.933 21.173H551.667L514.333 60.7196L555.16 102.826H536.613Z" fill="currentColor"></path>
+										<path d="M621.56 21.173H561.466V33.5332H621.56V21.173Z" fill="url(#paint5_linear_26_619f)"></path>
+										<path d="M575 90.3465V67.4798H619.573V55.3465H561.466V102.826H622.253V90.3465H575Z" fill="currentColor"></path>
+										<path d="M723.173 61.9999C723.173 44.1465 711.04 31.7863 693.653 31.7863H674.64V92.2131H693.653C711.16 92.2131 723.173 79.8532 723.173 61.9999ZM734.72 61.9999C734.72 86.3865 718.04 102.826 693.653 102.826H663.32V21.173H693.653C718.04 21.173 734.72 37.6132 734.72 61.9999Z" fill="currentColor"></path>
+										<path d="M748.267 21.173H759.573V102.826H748.267V21.173Z" fill="currentColor"></path>
+										<path d="M847.773 57.453V91.053C838.68 100.146 828.173 104.467 815.227 104.467C790.027 104.467 773.227 87.4266 773.227 61.9999C773.227 37.0399 790.72 19.5332 815.92 19.5332C827.48 19.5332 838.093 23.9732 846.027 32.0132L838.68 39.5999C832.84 33.6532 824.32 30.2665 815.92 30.2665C797.493 30.2665 784.653 43.2132 784.653 61.9999C784.653 81.2532 796.787 93.7332 815.227 93.7332C823.853 93.7332 830.853 91.3999 837.16 86.2666V67.7197H813.013V57.453H847.773Z" fill="currentColor"></path>
+										<path d="M862.6 21.173H873.92V102.826H862.6V21.173Z" fill="currentColor"></path>
+										<path d="M950.093 31.7863H922.68V102.826H911.48V31.7863H884.066V21.173H950.093V31.7863Z" fill="currentColor"></path>
+										<path d="M968.533 74.4798H1004.93L986.733 32.9465L968.533 74.4798ZM1009.6 84.9863H963.866L956.053 102.826H943.68L980.32 21.173H993.146L1029.79 102.826H1017.41L1009.6 84.9863Z" fill="currentColor"></path>
+										<path d="M1039.36 21.173H1050.67V92.2131H1094.77V102.826H1039.36V21.173Z" fill="currentColor"></path>
+										<defs>
+											<linearGradient id="paint0_linear_26_619f" x1="0.572754" y1="19.6664" x2="69.1584" y2="19.6664" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+											<linearGradient id="paint1_linear_26_619f" x1="2.29297" y1="85.7998" x2="68.1175" y2="85.7998" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+											<linearGradient id="paint2_linear_26_619f" x1="59.7466" y1="87.8533" x2="118.307" y2="87.8533" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+											<linearGradient id="paint3_linear_26_619f" x1="58.7329" y1="40.8932" x2="126.313" y2="40.8932" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+											<linearGradient id="paint4_linear_26_619f" x1="240.733" y1="27.3465" x2="300.816" y2="27.3465" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+											<linearGradient id="paint5_linear_26_619f" x1="561.466" y1="27.3465" x2="621.549" y2="27.3465" gradientUnits="userSpaceOnUse">
+												<stop stop-color="#86CF41"></stop>
+												<stop offset="0.994413" stop-color="#50C064"></stop>
+												<stop offset="1" stop-color="#50C064"></stop>
+											</linearGradient>
+										</defs>
+									</svg>
 								</a>
 							</div>
 							<!-- logo - end -->
@@ -46,19 +119,19 @@
 
 							<nav class="flex flex-col gap-4">
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Overview</a>
+									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Music Distribution</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Solutions</a>
+									<a href="<?= get_permalink(463); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Marketing & Promotions</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Pricing</a>
+									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Royalties & Licenses</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Customers</a>
+									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Youtube Content Id</a>
 								</div>
 							</nav>
 						</div>
@@ -70,15 +143,15 @@
 
 							<nav class="flex flex-col gap-4">
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About</a>
+									<a href="<?= get_permalink(24); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">About Us</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Carrers</a>
+									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Services</a>
 								</div>
-
+								
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Blog</a>
+									<a href="#1" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Carrers</a>
 								</div>
 							</nav>
 						</div>
@@ -90,14 +163,11 @@
 
 							<nav class="flex flex-col gap-4">
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact</a>
-								</div>
-								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Chat</a>
+									<a href="<?= get_permalink(26); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Contact Us</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
+									<a href="<?= get_permalink(465); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">FAQ</a>
 								</div>
 							</nav>
 						</div>
@@ -109,12 +179,12 @@
 
 							<nav class="flex flex-col gap-4">
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms
+									<a href="<?= get_permalink(488); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Terms
 										of Service</a>
 								</div>
 
 								<div>
-									<a href="#" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy
+									<a href="<?= get_permalink(3); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Privacy
 										Policy</a>
 								</div>
 
@@ -186,16 +256,16 @@
 		});
 	}
 
-	var MainHeadSecInner = 
-	$(window).scroll(function() {
+	var MainHeadSecInner =
+		$(window).scroll(function() {
 
-		if ($(window).scrollTop() > 300) {
-			MainHeadSecInnerDiv.removeClass('shadow-[none]');
-		} else {
-			MainHeadSecInnerDiv.addClass('shadow-[none]');
-		}
+			if ($(window).scrollTop() > 300) {
+				MainHeadSecInnerDiv.removeClass('shadow-[none]');
+			} else {
+				MainHeadSecInnerDiv.addClass('shadow-[none]');
+			}
 
-	});
+		});
 </script>
 
 </body>
