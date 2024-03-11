@@ -1,5 +1,10 @@
+:root {
+    --primary-c: #FF9843;
+    --secondary-c: #C51605;
+}
+
 .testimonialSwiperPagination .swiper-pagination-bullet {
-    background-color: #fff !important;
+    background-color: #000 !important;
 }
 
 .testimonialSwiperPagination .swiper-pagination-bullet-active {
@@ -40,6 +45,10 @@
 .nav-menu>.menu-item-has-children>a:after {
     border-top-color: #fff;
     border-left-color: #fff;
+}
+.nav-menu>.menu-item-has-children>a.active:after {
+    border-top-color: #000;
+    border-left-color: #000;
 }
 
 .nav-menu .menu-item-has-children:hover>a:after {
@@ -147,6 +156,46 @@
 .parsley-errors-list>li{
     color: #f00 !important;
 }
+.elementor-element.set_image_height_issue{
+    display: block !important;
+}
+.set_img_height_issue img{
+    height: auto !important;
+}
+.set_list_icon .elementor-icon-list-item{
+    align-items: flex-start !important;
+}
+
+.btn-primary{
+    background-image: linear-gradient(-45deg, var(--primary-c), var(--secondary-c),  var(--primary-c), var(--secondary-c));
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    20% {
+        background-position: 20% 50%;
+    }
+    40% {
+        background-position: 40% 50%;
+    }
+    60% {
+        background-position: 60% 50%;
+    }
+    80% {
+        background-position: 80% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}
+
+
+
+
 
 @media screen and (max-width: 639px) {
     .contact_form_section .form_group_sec .width_50 {

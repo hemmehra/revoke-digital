@@ -17,8 +17,7 @@
 	<?php include_once get_template_directory() . '/template-parts/content/content-page-header-banner.php'; ?>
 
 	<div>
-		<div class="container">
-			<div class="entry-content">
+	<div class="entry-content">
 				<?php
 				the_content();
 
@@ -48,7 +47,6 @@
 					?>
 				</footer><!-- .entry-footer -->
 			<?php endif; ?>
-		</div>
 	</div>
 
 </article><!-- #post-<?php the_ID(); ?> -->

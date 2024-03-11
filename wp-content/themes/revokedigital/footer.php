@@ -22,12 +22,12 @@
 	<?php 
 	if(!is_page(26)):
 	?>
-	<div class="bg-black py-6 pl-0 md:py-8 lg:py-12">
+	<div class="bg-secBgBG py-6 pl-0 md:py-8 lg:py-12">
 		<div class="container">
 			<div class="flex overflow-hidden rounded-lg">
 				<div class="flex flex-col items-center text-center justify-between gap-4 rounded-lg bg-gray-1 p-4 w-full md:flex-row md:text-left md:px-7">
 					<div class="w-full md:w-2/3">
-						<h2 class="text-3xl font-bold md:text-3xl">Grow Your <span class="text-primary">Career</span><br class="lg:hidden"> With Help of Us</h2>
+						<h2 class="text-3xl font-bold md:text-3xl">Grow Your <span class="text-secondary">Career</span><br class="lg:hidden"> With Help of Us</h2>
 						<p>This is a section of some simple filler text, also known as placeholder text. It shares some characteristics of a real written text.</p>
 					</div>
 
@@ -49,59 +49,53 @@
 							<!-- logo - start -->
 							<div class="mb-4 lg:-mt-2">
 								<a href="/" class="inline-flex items-center gap-2 text-xl font-bold md:text-2xl" aria-label="logo">
-									<svg class="w-full" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1095 124" fill="none">
-										<path d="M69.1595 38.5063H22.5194L0.572754 0.813117H47.2129L48.3061 2.67978L69.1595 38.5063Z" fill="url(#paint0_linear_26_619f)"></path>
-										<path d="M68.1195 48.5598L24.6529 123.04L2.35964 83.3333L2.29297 83.2265L22.093 48.5598H68.1195Z" fill="url(#paint1_linear_26_619f)"></path>
-										<path d="M118.306 122.907L83.3333 123.187L82.9599 122.533L60.1333 83.3334L59.7466 82.6532L77.3333 52.5334L95.2666 83.3334L99.8666 91.2399L118.306 122.907Z" fill="url(#paint2_linear_26_619f)"></path>
-										<path d="M126.319 42.2531V42.2666L126.039 42.7731L105.413 80.9731L58.7329 0.813245H102.359C103.106 2.09324 103.946 3.58663 104.919 5.26663C109.893 13.88 117.719 27.4131 126.319 42.2531Z" fill="url(#paint3_linear_26_619f)"></path>
-										<path d="M197.107 33.773H172.48V62.4665H197.107C206.787 62.4665 212.613 57.093 212.613 48.1196C212.613 39.253 206.787 33.773 197.107 33.773ZM189.173 74.9465H172.6V102.826H158.947V21.173H197.213C214.72 21.173 226.147 31.9063 226.147 48.1196C226.147 61.653 218.107 71.3332 205.04 74.1332L229.88 102.826H212.853L189.173 74.9465Z" fill="currentColor"></path>
-										<path d="M300.827 21.173H240.747V33.5332H300.827V21.173Z" fill="url(#paint4_linear_26_619f)"></path>
-										<path d="M254.267 90.3465V67.4798H298.84V55.3465H240.747V102.826H301.52V90.3465H254.267Z" fill="currentColor"></path>
-										<path d="M388.906 21.173L355.186 102.826H340.493L306.653 21.173H321.36L335.12 55.1196L347.72 86.9598L374.213 21.173H388.906Z" fill="currentColor"></path>
-										<path d="M461.013 62C461.013 44.1466 449.573 32.0133 432.773 32.0133C415.866 32.0133 404.426 44.1466 404.426 62C404.426 79.8533 415.866 91.9864 432.773 91.9864C449.573 91.9864 461.013 79.8533 461.013 62ZM390.667 62C390.667 36.5733 407.573 19.4133 432.773 19.4133C457.866 19.4133 474.773 36.5733 474.773 62C474.773 87.4266 457.866 104.586 432.773 104.586C407.573 104.586 390.667 87.4266 390.667 62Z" fill="currentColor"></path>
-										<path d="M536.613 102.826L501.386 66.1999V102.826H487.613V21.173H501.386V56.053L533.933 21.173H551.667L514.333 60.7196L555.16 102.826H536.613Z" fill="currentColor"></path>
-										<path d="M621.56 21.173H561.466V33.5332H621.56V21.173Z" fill="url(#paint5_linear_26_619f)"></path>
-										<path d="M575 90.3465V67.4798H619.573V55.3465H561.466V102.826H622.253V90.3465H575Z" fill="currentColor"></path>
-										<path d="M723.173 61.9999C723.173 44.1465 711.04 31.7863 693.653 31.7863H674.64V92.2131H693.653C711.16 92.2131 723.173 79.8532 723.173 61.9999ZM734.72 61.9999C734.72 86.3865 718.04 102.826 693.653 102.826H663.32V21.173H693.653C718.04 21.173 734.72 37.6132 734.72 61.9999Z" fill="currentColor"></path>
-										<path d="M748.267 21.173H759.573V102.826H748.267V21.173Z" fill="currentColor"></path>
-										<path d="M847.773 57.453V91.053C838.68 100.146 828.173 104.467 815.227 104.467C790.027 104.467 773.227 87.4266 773.227 61.9999C773.227 37.0399 790.72 19.5332 815.92 19.5332C827.48 19.5332 838.093 23.9732 846.027 32.0132L838.68 39.5999C832.84 33.6532 824.32 30.2665 815.92 30.2665C797.493 30.2665 784.653 43.2132 784.653 61.9999C784.653 81.2532 796.787 93.7332 815.227 93.7332C823.853 93.7332 830.853 91.3999 837.16 86.2666V67.7197H813.013V57.453H847.773Z" fill="currentColor"></path>
-										<path d="M862.6 21.173H873.92V102.826H862.6V21.173Z" fill="currentColor"></path>
-										<path d="M950.093 31.7863H922.68V102.826H911.48V31.7863H884.066V21.173H950.093V31.7863Z" fill="currentColor"></path>
-										<path d="M968.533 74.4798H1004.93L986.733 32.9465L968.533 74.4798ZM1009.6 84.9863H963.866L956.053 102.826H943.68L980.32 21.173H993.146L1029.79 102.826H1017.41L1009.6 84.9863Z" fill="currentColor"></path>
-										<path d="M1039.36 21.173H1050.67V92.2131H1094.77V102.826H1039.36V21.173Z" fill="currentColor"></path>
-										<defs>
-											<linearGradient id="paint0_linear_26_619f" x1="0.572754" y1="19.6664" x2="69.1584" y2="19.6664" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-											<linearGradient id="paint1_linear_26_619f" x1="2.29297" y1="85.7998" x2="68.1175" y2="85.7998" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-											<linearGradient id="paint2_linear_26_619f" x1="59.7466" y1="87.8533" x2="118.307" y2="87.8533" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-											<linearGradient id="paint3_linear_26_619f" x1="58.7329" y1="40.8932" x2="126.313" y2="40.8932" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-											<linearGradient id="paint4_linear_26_619f" x1="240.733" y1="27.3465" x2="300.816" y2="27.3465" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-											<linearGradient id="paint5_linear_26_619f" x1="561.466" y1="27.3465" x2="621.549" y2="27.3465" gradientUnits="userSpaceOnUse">
-												<stop stop-color="#86CF41"></stop>
-												<stop offset="0.994413" stop-color="#50C064"></stop>
-												<stop offset="1" stop-color="#50C064"></stop>
-											</linearGradient>
-										</defs>
-									</svg>
+									<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1095 123" fill="none">
+												<path d="M68.5867 37.6931H21.9466L0 -0.000115898H46.6401L47.7333 1.86655L68.5867 37.6931Z" fill="url(#paint0_linear_62_3)" />
+												<path d="M67.5468 47.7466L24.0801 122.227L1.78688 82.5201L1.72021 82.4133L21.5202 47.7466H67.5468Z" fill="url(#paint1_linear_62_3)" />
+												<path d="M117.734 122.093L82.7605 122.373L82.3871 121.72L59.5605 82.5202L59.1738 81.84L76.7605 51.7202L94.6939 82.5202L99.2939 90.4267L117.734 122.093Z" fill="url(#paint2_linear_62_3)" />
+												<path d="M125.747 41.4399V41.4534L125.467 41.9599L104.84 80.1599L58.1602 1.20954e-05H101.787C102.533 1.28001 103.373 2.7734 104.347 4.4534C109.32 13.0667 117.147 26.5999 125.747 41.4399Z" fill="url(#paint3_linear_62_3)" />
+												<path d="M196.534 32.9598H171.907V61.6533H196.534C206.214 61.6533 212.041 56.2798 212.041 47.3064C212.041 38.4398 206.214 32.9598 196.534 32.9598ZM188.601 74.1332H172.027V102.013H158.374V20.3598H196.641C214.147 20.3598 225.574 31.0931 225.574 47.3064C225.574 60.8397 217.534 70.52 204.467 73.32L229.307 102.013H212.281L188.601 74.1332Z" fill="#1B1918" />
+												<path d="M300.254 20.3598H240.174V32.72H300.254V20.3598Z" fill="url(#paint4_linear_62_3)" />
+												<path d="M253.694 89.5332V66.6666H298.267V54.5332H240.174V102.013H300.947V89.5332H253.694Z" fill="#1B1918" />
+												<path d="M388.333 20.3598L354.613 102.013H339.92L306.08 20.3598H320.787L334.547 54.3064L347.147 86.1465L373.64 20.3598H388.333Z" fill="#1B1918" />
+												<path d="M460.44 61.1867C460.44 43.3334 449 31.2 432.2 31.2C415.294 31.2 403.854 43.3334 403.854 61.1867C403.854 79.0401 415.294 91.1732 432.2 91.1732C449 91.1732 460.44 79.0401 460.44 61.1867ZM390.094 61.1867C390.094 35.7601 407 18.6 432.2 18.6C457.294 18.6 474.2 35.7601 474.2 61.1867C474.2 86.6134 457.294 103.773 432.2 103.773C407 103.773 390.094 86.6134 390.094 61.1867Z" fill="#1B1918" />
+												<path d="M536.041 102.013L500.814 65.3866V102.013H487.041V20.3598H500.814V55.2397L533.361 20.3598H551.094L513.761 59.9064L554.587 102.013H536.041Z" fill="#1B1918" />
+												<path d="M620.987 20.3598H560.894V32.72H620.987V20.3598Z" fill="url(#paint5_linear_62_3)" />
+												<path d="M574.427 89.5332V66.6666H619V54.5332H560.894V102.013H621.68V89.5332H574.427Z" fill="#1B1918" />
+												<path d="M722.6 61.1866C722.6 43.3333 710.467 30.9731 693.08 30.9731H674.067V91.3999H693.08C710.587 91.3999 722.6 79.04 722.6 61.1866ZM734.147 61.1866C734.147 85.5733 717.467 102.013 693.08 102.013H662.747V20.3598H693.08C717.467 20.3598 734.147 36.8 734.147 61.1866Z" fill="#1B1918" />
+												<path d="M747.694 20.3598H759V102.013H747.694V20.3598Z" fill="#1B1918" />
+												<path d="M847.2 56.6398V90.2398C838.107 99.3331 827.6 103.653 814.654 103.653C789.454 103.653 772.654 86.6133 772.654 61.1867C772.654 36.2267 790.147 18.72 815.347 18.72C826.907 18.72 837.52 23.1599 845.454 31.1999L838.107 38.7867C832.267 32.84 823.747 29.4533 815.347 29.4533C796.92 29.4533 784.08 42.4 784.08 61.1867C784.08 80.44 796.214 92.92 814.654 92.92C823.28 92.92 830.28 90.5867 836.587 85.4533V66.9064H812.441V56.6398H847.2Z" fill="#1B1918" />
+												<path d="M862.027 20.3598H873.347V102.013H862.027V20.3598Z" fill="#1B1918" />
+												<path d="M949.52 30.9731H922.107V102.013H910.907V30.9731H883.494V20.3598H949.52V30.9731Z" fill="#1B1918" />
+												<path d="M967.96 73.6666H1004.36L986.16 32.1332L967.96 73.6666ZM1009.03 84.1731H963.294L955.48 102.013H943.107L979.747 20.3598H992.574L1029.21 102.013H1016.84L1009.03 84.1731Z" fill="#1B1918" />
+												<path d="M1038.79 20.3598H1050.09V91.3999H1094.2V102.013H1038.79V20.3598Z" fill="#1B1918" />
+												<defs>
+													<linearGradient id="paint0_linear_62_3" x1="0" y1="18.8532" x2="68.5857" y2="18.8532" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#17065C" />
+														<stop offset="0.994413" stop-color="#00C2F3" />
+													</linearGradient>
+													<linearGradient id="paint1_linear_62_3" x1="1.72021" y1="84.9866" x2="67.5448" y2="84.9866" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#17065C" />
+														<stop offset="1" stop-color="#00C2F3" />
+													</linearGradient>
+													<linearGradient id="paint2_linear_62_3" x1="59.1738" y1="87.0401" x2="117.734" y2="87.0401" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#00C2F3" />
+														<stop offset="0.994413" stop-color="#17065C" />
+													</linearGradient>
+													<linearGradient id="paint3_linear_62_3" x1="58.1602" y1="40.08" x2="125.74" y2="40.08" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#00C2F3" />
+														<stop offset="0.994413" stop-color="#17065C" />
+													</linearGradient>
+													<linearGradient id="paint4_linear_62_3" x1="240.16" y1="26.5332" x2="300.243" y2="26.5332" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#00C2F3" />
+														<stop offset="0.994413" stop-color="#17065C" />
+													</linearGradient>
+													<linearGradient id="paint5_linear_62_3" x1="560.894" y1="26.5332" x2="620.976" y2="26.5332" gradientUnits="userSpaceOnUse">
+														<stop stop-color="#00C2F3" />
+														<stop offset="1" stop-color="#17065C" />
+													</linearGradient>
+												</defs>
+											</svg>
 								</a>
 							</div>
 							<!-- logo - end -->
@@ -119,7 +113,7 @@
 
 							<nav class="flex flex-col gap-4">
 								<div>
-									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Music Distribution</a>
+									<a href="<?= get_permalink(515); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Music Distribution</a>
 								</div>
 
 								<div>
@@ -127,11 +121,11 @@
 								</div>
 
 								<div>
-									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Royalties & Licenses</a>
+									<a href="<?= get_permalink(517); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Royalties & Licenses</a>
 								</div>
 
 								<div>
-									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Youtube Content Id</a>
+									<a href="<?= get_permalink(519); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Youtube Content Id</a>
 								</div>
 							</nav>
 						</div>
@@ -148,10 +142,6 @@
 
 								<div>
 									<a href="<?= get_permalink(28); ?>" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Services</a>
-								</div>
-								
-								<div>
-									<a href="#1" class="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">Carrers</a>
 								</div>
 							</nav>
 						</div>
@@ -242,6 +232,7 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/swiper-bundle.min.js"></script>
 <script>
 	var MainHeadSecInnerDiv = $('#MainHeadSecInner');
+	var addScrollActiveClass = $('.addScrollActiveClass');
 	$(document).ready(function() {
 		setHeaderHeight();
 	});
@@ -259,10 +250,14 @@
 	var MainHeadSecInner =
 		$(window).scroll(function() {
 
-			if ($(window).scrollTop() > 300) {
+			if ($(window).scrollTop() > 200) {
 				MainHeadSecInnerDiv.removeClass('shadow-[none]');
+				MainHeadSecInnerDiv.addClass('active');
+				addScrollActiveClass.addClass('active');
 			} else {
+				MainHeadSecInnerDiv.removeClass('active');
 				MainHeadSecInnerDiv.addClass('shadow-[none]');
+				addScrollActiveClass.removeClass('active');
 			}
 
 		});
