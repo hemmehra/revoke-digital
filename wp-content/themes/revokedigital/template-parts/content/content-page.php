@@ -14,7 +14,7 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-	<?php include_once get_template_directory() . '/template-parts/content/content-page-header-banner.php'; ?>
+	<?php //include_once get_template_directory() . '/template-parts/content/content-page-header-banner.php'; ?>
 
 	<div>
 	<div class="entry-content">

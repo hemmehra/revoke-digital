@@ -2,6 +2,21 @@
     --primary-c: #FF9843;
     --secondary-c: #C51605;
 }
+html{
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'agoka';
+    src: url('../fonts/AgokaFamilyRegular.woff2') format('woff2'),
+        url('../fonts/AgokaFamilyRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 
 .testimonialSwiperPagination .swiper-pagination-bullet {
     background-color: #000 !important;
@@ -65,6 +80,7 @@
 .contact_form_section .form_group_sec {
     padding: 0;
     margin: 0 -10px;
+    clear: both;
 }
 
 .contact_form_section .form_group_sec .width_50 {
@@ -92,18 +108,19 @@
 }
 
 .contact_form_section .form_group_sec .input_text {
-    background: #ffffff;
+    background: transparent;
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     border: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--primary-c);
     border-radius: 0;
     width: 100%;
-    padding: 5px 0;
+    padding: 5px 5px;
     line-height: 1.4;
     resize: none;
 }
+
 
 .contact_form_left_main:after {
     content: '';
@@ -134,7 +151,7 @@
 }
 
 .form_group_sec label {
-    color: #000000;
+    color: #ffffff;
 }
 
 .contact_form_section input:is(:focus, :focus-visible),
@@ -148,7 +165,7 @@
 }
 
 .wpcf7-response-output {
-    color: #000000 !important;
+    color: #ffffff !important;
 }
 .about-page-sec{
     overflow: hidden !important;
@@ -193,7 +210,64 @@
     }
 }
 
+.c-rail-static {
+    border-bottom: 1px solid #fff;
+    border-top: 1px solid #fff;
+    font-size: 50px;
+    padding: 1.25rem 0;
+    text-transform: uppercase;
+    transform: translateZ(0);
+    white-space: nowrap;
+}
+.c-rail-static_label {
+    display: inline-block;
+    padding-right: 5rem;
+}
 
+.c-rail-static_item {
+    -webkit-animation: railStatic 3s linear infinite;
+    animation: railStatic 3s linear infinite;
+    -webkit-animation-play-state: paused;
+    animation-play-state: paused;
+    display: inline-block;
+}
+
+.c-rail-static.is-show .c-rail-static.-slow .c-rail-static_item, .c-rail-static.is-show .c-rail-static_item {
+    -webkit-animation-play-state: running;
+    animation-play-state: running;
+}
+.service-title{
+    text-stroke: 2px var(--primary-c);
+    -webkit-text-stroke: 2px var(--primary-c);
+    color: transparent;
+}
+
+.add-text-effect,.mobile-menu-link-effect{
+    transform: translateY(100%);
+}
+ /* Create the animation... */
+ @keyframes slide-up {
+    from {
+      transform: translateY(100%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+
+  .slide-up-box {
+    animation: slide-up 1500ms;
+  }
+
+
+@keyframes railStatic {
+    0% {
+        transform: translateZ(0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
 
 
 
@@ -221,6 +295,40 @@
 }
 
 
+/* Min Width Media Start */
+@media screen and (min-width: 0) {
+    .c-rail-static {
+        font-size: 20px !important;
+    }
+}
+@media screen and (min-width: 320px) {
+    .c-rail-static {
+        font-size: 20px !important;
+    }
+}
+@media screen and (min-width: 480px) {
+    .c-rail-static {
+        font-size: 20px !important;
+    }
+}
+@media screen and (min-width: 640px) {
+    .c-rail-static {
+        font-size: 24px !important;
+    }
+}
+@media screen and (min-width: 1024px) {
+    .c-rail-static {
+        font-size: 28px !important;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .c-rail-static {
+        font-size: 30px !important;
+    }
+}
+@media screen and (min-width: 1536px) {
+    .c-rail-static {
+        font-size: 35px !important;
+    }
+}
 
-
-/* Contact Form End */

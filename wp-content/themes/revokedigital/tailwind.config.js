@@ -23,6 +23,7 @@ module.exports = {
       'serviceSec':"linear-gradient(0deg, rgb(67 193 112 / 53%) 0%, rgba(29, 161, 243, 0.00) 100%)",
 	    'mobileViewBannerBg': "linear-gradient(0deg, rgb(26 26 26) 0%, rgba(71, 101, 103, 0.00) 100%)",
 	    'headerBg': "linear-gradient(180deg, black, transparent);",
+	    'darkPrimaryBg': "radial-gradient(circle, rgba(255, 152, 67, 0.21052170868347342) 0%, rgba(197, 22, 5, 0) 28%)",
 	    'headerBgDirt': "url('../images/dirt.gif')",
     },
     colors: {
@@ -33,12 +34,14 @@ module.exports = {
 		'side-bar-bg': "#f8f8f8",
 		'backgroundPrimaryLight': "#fcfcfc",
 		'backgroundPrimaryDark': "#1a1a1a",
-		'secBgBG': "#f4f4f4",
+		'secBgBG': "#1a1a1a",
     transparent: 'transparent',
     },
     fontFamily: {
-	montserrat: ["Montserrat"], 
-	nexaBold: ["NexaBold"],
+        montserrat: ["Montserrat"], 
+        nexaBold: ["NexaBold"],
+        agoka: ["agoka"],
+        bebasNeue: ["Bebas Neue"],
     },
   },
   rippleui: {

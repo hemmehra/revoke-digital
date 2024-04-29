@@ -2,7 +2,7 @@
 
 /** Template Name:Login */
 get_header();
-include_once get_template_directory() . '/template-parts/content/content-page-header-banner.php';
+// include_once get_template_directory() . '/template-parts/content/content-page-header-banner.php';
 ?>
 <div class="py-20">
     <div class="container">
@@ -31,20 +31,20 @@ include_once get_template_directory() . '/template-parts/content/content-page-he
 												</g>
 												<defs>
 													<linearGradient id="paint0_linear_63_4slll" x1="0.5" y1="18.8529" x2="69.0857" y2="18.8529" gradientUnits="userSpaceOnUse">
-														<stop stop-color="#17065C"></stop>
-														<stop offset="0.994413" stop-color="#00C2F3"></stop>
+														<stop stop-color="#C51605"></stop>
+														<stop offset="0.994413" stop-color="#FF9843"></stop>
 													</linearGradient>
 													<linearGradient id="paint1_linear_63_4slll" x1="2.22021" y1="84.9863" x2="68.0448" y2="84.9863" gradientUnits="userSpaceOnUse">
-														<stop stop-color="#17065C"></stop>
-														<stop offset="0.994413" stop-color="#00C2F3"></stop>
+														<stop stop-color="#C51605"></stop>
+														<stop offset="0.994413" stop-color="#FF9843"></stop>
 													</linearGradient>
 													<linearGradient id="paint2_linear_63_4slll" x1="59.6738" y1="87.0398" x2="118.234" y2="87.0398" gradientUnits="userSpaceOnUse">
-														<stop stop-color="#00C2F3"></stop>
-														<stop offset="0.994413" stop-color="#17065C"></stop>
+														<stop stop-color="#FF9843"></stop>
+														<stop offset="0.994413" stop-color="#C51605"></stop>
 													</linearGradient>
 													<linearGradient id="paint3_linear_63_4slll" x1="58.6602" y1="40.0797" x2="126.24" y2="40.0797" gradientUnits="userSpaceOnUse">
-														<stop stop-color="#00C2F3"></stop>
-														<stop offset="0.994413" stop-color="#17065C"></stop>
+														<stop stop-color="#FF9843"></stop>
+														<stop offset="0.994413" stop-color="#C51605"></stop>
 													</linearGradient>
 												</defs>
 											</svg>
